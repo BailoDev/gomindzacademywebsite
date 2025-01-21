@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomindz Academy</title>
+    <!-- ----- Links ----- -->
+        <!-- ----- Custom CSS ----- -->
+        <link rel="stylesheet" href="./assets/css/event-gallery.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- ------ AOS Animate ------- -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <!-- ----- Owl Carousel ----- -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+        <!-- ----- Box-Icons ----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!-- ----- Swiper JS ----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-- HEADER-SECTION -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">
+                <img src="./assets/images/company-logo.webp" alt="company-logo" style="width: 2.8rem;">
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active-link">
+                            <i class='bx bx-home  nav-icon'></i>
+                            <span class="nav-name">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <i class='bx bx-user nav-icon'></i>
+                            <span class="nav-name">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html" class="nav-link">
+                            <i class='bx bx-book nav-icon'></i>
+                            <span class="nav-name">Courses</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="about.html#faqs" class="nav-link">
+                            <i class='bx bx-news nav-icon'></i>
+                            <span class="nav-name">FAQ's</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#event-home" class="nav-link">
+                            <i class='bx bx-calendar-event nav-icon'></i>
+                            <span class="nav-name">Events</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+
+            <div class="btns">
+                <a href="intern.html" class="btn-secondary">Hire Interns</a>
+                <a href="#courses" class="btn-primary">Portal</a>
+            </div>
+        </nav>
+    </header>       
+    <!-- ================= MAIN-BODY ===================== -->
+    
+    <!-- HOME-SECTION -->
+    <div class="event-home" id="event-home">
+        <div class="container event-home-content"> 
+            <img src="./assets/images/career-bg.webp" alt="event-image" class="event-img-slide active">
+            <img src="./assets/images/seminar-bg.jpg" alt="event-image" class="event-img-slide">
+            <img src="./assets/images/football-bg.webp" alt="event-image" class="event-img-slide">
+
+            <div class="event-content active">
+                    <h1>Career And Mentorship</h1>
+                    <p>
+                        This event connects participants with experienced professionals who provide guidance on career paths, 
+                        skills development, and achieving professional goals. Attendees gain insights into industry trends, 
+                        networking opportunities, and strategies for personal and career growth.
+                    </p>
+                    <!-- <a href="#">Watch Video</a> -->
+            </div>
+            <div class="event-content">
+                    <h1>Seminar</h1>
+                    <p>
+                        Seminars are educational events where experts share knowledge on specific topics. 
+                        These sessions typically include presentations, discussions, and Q&A segments, allowing 
+                        participants to deepen their understanding and explore new ideas,
+                    </p>
+                    <!-- <a href="#">Watch Video</a> -->
+            </div>
+            <div class="event-content">
+                    <h1>Football Matches</h1>
+                    <p>
+                        Football matches offer participants a chance to engage in team-building, physical fitness, and 
+                        community bonding. These events promote sportsmanship, camaraderie, and healthy competition, 
+                        creating a lively and enjoyable atmosphere for all.
+                    </p>
+                    <!-- <a href="#">Watch Video</a> -->
+            </div>
+            <div class="event-media-icons">
+                <a href="https://www.linkedin.com/company/gomindz-academy/"><img src="./assets/images/icons - logos/linkedin.webp" alt="linkedin-page"></a>
+                <a href="https://www.instagram.com/gomindzacademy?igsh=MXN2NGZsazF6eHpsdw%3D%3D&utm_source=qr"><img src="./assets/images/icons - logos/instagram.webp" alt="instagram-page"></a>
+                <a href="https://x.com/gomindzacademy?s=11"><img src="./assets/images/icons - logos/twitter.webp" alt="twitter-page"></a>
+                <a href="https://www.tiktok.com/@gomindzacademy101?_t=8q9muuf7kve&_r=1"><img src="./assets/images/icons - logos/tik-tok.webp" alt="whatsapp-page"></a>
+            </div>
+
+            <div class="event-slider-navigation">
+                <div class="event-nav-btn active"></div>
+                <div class="event-nav-btn"></div>
+                <div class="event-nav-btn"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY-SECTION -->
+    <section id="gallery">
+        <div class="events-gallery">
+            <div class="tabs">
+                <h2>Events Gallery</h2>
+                <div class="tab">
+                  <button class="tab-btn" onclick="toggleDropdown('career')">
+                    <i class="fas fa-briefcase"></i> Career and Mentorship <i class="fas fa-chevron-down icon"></i>
+                  </button>
+                  <div class="dropdown" id="career">
+                    <button onclick="showGallery('career1')">Foundation 201</button>
+                    <!-- <button onclick="showGallery('career2')">Foundation 202</button> -->
+                  </div>
+                </div>         
+                <div class="tab">
+                  <button class="tab-btn" onclick="toggleDropdown('football')">
+                    <i class="fas fa-futbol"></i> Football Matches <i class="fas fa-chevron-down icon"></i>
+                  </button>
+                  <div class="dropdown" id="football">
+                    <button onclick="showGallery('football1')">Against Malaysia</button>
+                    <!-- <button onclick="showGallery('football2')">Foundation 202</button> -->
+                  </div>
+                </div>         
+                <div class="tab">
+                  <button class="tab-btn" onclick="toggleDropdown('seminar')">
+                    <i class="fas fa-chalkboard-teacher"></i> Seminar <i class="fas fa-chevron-down icon"></i>
+                  </button>
+                  <div class="dropdown" id="seminar">
+                    <button onclick="showGallery('seminar1')">Cyber Security</button>
+                    <button onclick="showGallery('seminar2')">Digital Literacy</button>
+                  </div>
+                </div>
+            </div>
+          
+            <div class="gallery">          
+                <!-- CAREER-AND-MENTORSHIP -->
+                <div id="career1" class="gallery-images">
+                    <div class="gallery-column">
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-1.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-2.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-3.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-4.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-5.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-6.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-7.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-8.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-9.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-10.jpg" alt="event-img"></div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-11.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-12.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-13.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-14.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-15.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-16.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-17.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-18.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-19.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-20.jpg" alt="event-img"></div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-21.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-22.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-23.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-24.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-25.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-26.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-27.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-28.jpg" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-29.webp" alt="event-img"></div>
+                        <div class="gallery-img"><img src="./assets/images/gallery-events/career/201/ment-30.webp" alt="event-img"></div>
+                    </div>
+                </div>
+
+
+                <!-- FOOTBALL-MATCHES -->
+                <div id="football1" class="gallery-images">
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-22.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-23.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-24.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-25.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-26.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-27.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-28.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-29.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-30.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-31.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-32.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-33.webp" alt="event-photo"></div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-1.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-2.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-3.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-4.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-5.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-6.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-7.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-8.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-9.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-10.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-11.webp" alt="event-photo"></div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-11.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-12.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-13.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-14.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-15.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-16.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-17.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-18.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-19.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-20.webp" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/footbll/against-malaysia/fb-21.webp" alt="event-photo"></div>
+                    </div>
+                </div>
+                <!-- <div id="football2" class="gallery-images">
+                    <div class="gallery-column">
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-1.webp" alt="event-photo"></div>
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-4.webp" alt="event-photo"></div>
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-2.webp" alt="event-photo"></div>
+                    </div>
+                    <div class="gallery-column">
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-3.webp" alt="event-photo"></div>
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-5.webp" alt="event-photo"></div>
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-6.webp" alt="event-photo"></div>
+                    </div>
+                    <div class="gallery-column">
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-2.webp" alt="event-photo"></div>
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-6.webp" alt="event-photo"></div>
+                      <div class="gallery-photo"><img src="./assets/images/gallery-events/img-4.webp" alt="event-photo"></div>
+                    </div>
+                </div> -->
+                
+                <!-- SEMINARS -->
+                <div id="seminar1" class="gallery-images">
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-1.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-2.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-3.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-4.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-5.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-6.jpg" alt="event-photo"></div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-7.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-8.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-9.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-10.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-11.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-12.jpg" alt="event-photo"></div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-13.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-14.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-15.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-16.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-17.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/cyber-security/sem-18.jpg" alt="event-photo"></div>
+                    </div>
+                </div>
+                <div id="seminar2" class="gallery-images">
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-1.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-2.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-3.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-4.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-5.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-6.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-7.jpg" alt="event-photo"></div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-8.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-9.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-10.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-11.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-12.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-13.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-14.jpg" alt="event-photo"></div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-15.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-16.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-17.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-18.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-19.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-20.jpg" alt="event-photo"></div>
+                        <div class="gallery-photo"><img src="./assets/images/gallery-events/seminar/SOSHA/sem-21.jpg" alt="event-photo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- WHATAPP-CHAT -->
+    <a
+    href="https://wa.me/+2203229625"
+    target="_blank"
+    class="whatsapp-chat"
+    title="Chat with us on WhatsApp"
+    >
+    <span class="whatsapp-icon"><img src="./assets/images/icons - logos/whatsap.webp" alt="Whatsapp-logo"></span>
+    </a>
+
+    <!-- ------ Footer Section ------ -->
+    <footer class="footer-distributed " id="footer">
+        <div class="container">
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    Our curriculum is designed to be hands-on and industry relevant, ensuring 
+                    that our students not only gain theoretical knowledge but also practical skills that are 
+                    in high demand in today's job market.
+                </p>
+                <div class="media-icons">
+                    <a href="https://www.linkedin.com/company/gomindz-academy/"><img src="./assets/images/icons - logos/linkedin.webp" alt="linkedin-page"></a>
+                    <a href="https://www.instagram.com/gomindzacademy?igsh=MXN2NGZsazF6eHpsdw%3D%3D&utm_source=qr"><img src="./assets/images/icons - logos/instagram.webp" alt="instagram-page"></a>
+                    <a href="https://x.com/gomindzacademy?s=11"><img src="./assets/images/icons - logos/twitter.webp" alt="twitter-page"></a>
+                    <a href="https://www.tiktok.com/@gomindzacademy101?_t=8q9muuf7kve&_r=1"><img src="./assets/images/icons - logos/tik-tok.webp" alt="whatsapp-page"></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="r-icons ri-map-pin-line"></i>
+                    <p><span>Kairaba Avenue, </span>Opposite Qcell</p>
+                </div>
+                <div>
+                    <i class="r-icons ri-phone-line"></i>
+                    <p>+220 5293353 / 3696325</p>
+                </div>
+                <div>
+                    <i class="r-icons ri-mail-line"></i>
+                    <p><a href="#">academy@gomindz.gm</a></p>
+                </div>
+            </div>
+            <div class="footer-left">
+                <h3>Gomindz Academy</h3>
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    |
+                    <a href="index.html#courses">Courses</a>
+                    |
+                    <a href="about.html">About</a>
+                    |
+                    <a href="index.html#testimonials">Testimonials</a>
+                </p>
+                <p class="footer-company-name">Copyright © 2024 
+                    <strong>Gomindz Academy</strong> All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --x-- Main Body --x-- -->
+            
+    <!-- ----- JavaScrip ----- -->
+        <!-- ----- Jquery ----- -->
+        <script src="./assets/js/jquery3.7.1.js"></script>
+
+        <!-- ----- aos animate ----- -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- ----- Swiper Js ----- -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- ----- Owl Carousel ----- -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+
+        <!-- ------ AOS Animate ------ -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 0,
+                duration: 2000,
+                delay: 0,
+                once: false
+            });
+        </script>
+
+        <!-- ----- Custom JS ----- -->
+        <script src="./assets/js/other-pages.js"></script>
+        <script src="./assets/js/script.js"></script>
+</body>
+</html>

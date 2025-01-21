@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomindz Academy</title>
+    <!-- ----- Links ----- -->
+        <!-- ----- Custom CSS ----- -->
+        <link rel="stylesheet" href="./assets/css/courses.css">
+        <link rel="stylesheet" href="./assets/css/about.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- ------ AOS Animate ------- -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+        <!-- ----- Owl Carousel ----- -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+        <!-- ----- Box-Icons ----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!-- ----- Swiper JS ----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-- ------ Header Section ------ -->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <a href="index.html" class="nav-logo">
+              <img src="./assets/images/company-logo.webp" alt="company-logo" style="width: 2.8rem;">
+          </a>
+
+          <div class="nav-menu" id="nav-menu">
+              <ul class="nav-list">
+                  <li class="nav-item">
+                      <a href="index.html" class="nav-link active-link">
+                          <i class='bx bx-home  nav-icon'></i>
+                          <span class="nav-name">Home</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="about.html" class="nav-link">
+                          <i class='bx bx-user nav-icon'></i>
+                          <span class="nav-name">About</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#courses-home" class="nav-link">
+                          <i class='bx bx-book nav-icon'></i>
+                          <span class="nav-name">Courses</span>
+                      </a>
+                  </li>
+                  <!-- <li class="nav-item">
+                      <a href="about.html#faqs" class="nav-link">
+                          <i class='bx bx-news nav-icon'></i>
+                          <span class="nav-name">FAQ's</span>
+                      </a>
+                  </li> -->
+                  <li class="nav-item">
+                      <a href="events-gallery.html" class="nav-link">
+                          <i class='bx bx-calendar-event nav-icon'></i>
+                          <span class="nav-name">Events</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>   
+
+          <div class="btns">
+              <a href="intern.html" class="btn-secondary">Hire Interns</a>
+              <a href="#courses" class="btn-primary">Portal</a>
+          </div>
+      </nav>
+  </header>       
+    <!-- ----- Main Body ----- -->
+    
+    <!-- ----- Home Section ----- -->
+    <div class="section-hight home" id="courses-home">
+        <div class="container home-container" data-aos="fade-up">
+            <h1>Our Courses/</h1>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search for a course..." onkeyup="searchCourses()">
+            </div>
+        </div>
+    </div>
+
+    <!-- ----- Navigation Buttons ----- -->
+    <div class="navigation-buttons">
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterCourses('all')"><h3>All</h3></button>
+            <button onclick="filterCourses('foundation')"><h3>Foundation</h3></button>
+            <button onclick="filterCourses('intermediate')"><h3>Intermediate</h3></button>
+            <button onclick="filterCourses('advanced')"><h3>Advanced</h3></button>
+            <button onclick="filterCourses('master-class')"><h3>Corporate Training</h3></button>
+        </div>
+    </div>
+
+    <!-- ------ Courses-Section ----- -->
+    <div class="course-container" id="course-list">
+        <!-- Foundation Courses -->
+        <div class="course-card foundation" onclick="window.open('https://docs.google.com/document/d/1hgnJ_stHovpSgHnHKxL1vkKrrxvjGng6/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/data-analysis-1.jpg" alt="Digital Technology">
+          <div class="course-info">
+            <h2>Digital Technology</h2>
+            <p>An introduction to foundational digital technologies and how they shape modern business and life.</p> 
+            <p class="para-pricing">
+                  Fees: <span class="canceled-price">D4,500</span>
+                        <span class="original-price">D4,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course covers the fundamentals of digital technology, including its practical applications in today's digital world.</p>
+            <button>Course Content</button>
+          </div>
+        </div>
+    
+        <!-- Intermediate Courses -->
+        <div class="course-card intermediate" onclick="window.open('https://docs.google.com/document/d/1Jk0fdA6YcgMcZBXjySolSrXZcGSYans5/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/data-analysis-2.jpg" alt="Intermediate Data Analytics">
+          <div class="course-info">
+            <h2>Data Analytics (Int)</h2>
+            <p>Dive deeper into data analysis, including data visualization, Power BI, and Excel Pivot Tables.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D10,000</span>
+                    <span class="original-price">D8,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This module aims to enhance students' with data literacy skills ranging from data manipulation and analysis..</p>
+            <button>Course Content</button>
+          </div>
+        </div>   
+        <div class="course-card intermediate" onclick="window.open('https://docs.google.com/document/d/1wwDPL5OObztES1MPxrOsAcbPheXeuGaa/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/data-science-1.webp" alt="Intermediate Data Science">
+          <div class="course-info">
+            <h2>Data Science (Int)</h2>
+            <p>Learn Python and data manipulation techniques, focusing on data cleaning and exploratory analysis.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D10,000</span>
+                    <span class="original-price">D8,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This module provides strong foundation in python programming tailored with data science applications.</p>
+            <button>Course Content</button>
+          </div>
+        </div>   
+        <div class="course-card intermediate" onclick="window.open('https://docs.google.com/document/d/1rrJk_AlTnGquNJc3jg-T3dSavwZIL8yc/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/digital-marketing-1.jpg" alt="Intermediate Digital Marketing">
+          <div class="course-info">
+            <h2>Digital Marketing (Int)</h2>
+            <p>Master the basics of SEO, SEM, content creation, and social media strategies.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D10,000</span>
+                    <span class="original-price">D8,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>Develop proficiency in Canva for graphic design and visual content creation.</p>
+            <button>Course Content</button>
+          </div>
+        </div>    
+        <div class="course-card intermediate" onclick="window.open('https://docs.google.com/document/d/1z29pQNEs57Nq4RByMRrXX05WI1Hlri6s/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/graphic-design-1.jpg" alt="Intermediate Graphic Design">
+          <div class="course-info">
+            <h2>Graphic Design (Int)</h2>
+            <p>Learn the fundamentals of design, Adobe Photoshop, Illustrator, and basic branding concepts.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D10,000</span>
+                    <span class="original-price">D8,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course offers a comprehensive curriculum covering fundatal principles and pracitcal skills.</p>
+            <button>Course Content</button>
+          </div>
+        </div>
+        <div class="course-card intermediate" onclick="window.open('https://docs.google.com/document/d/1NexVQEViZdznRW8UQ18ibOZHfYcg-rGl/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/cyber-security-1.webp" alt="Intermediate Cyber Security">
+          <div class="course-info">
+            <h2>Cyber Security (Int)</h2>
+            <p>Learn to identify potential threats, secure systems proactively, and recover from breaches effectively.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D10,000</span>
+                    <span class="original-price">D8,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course covers protecting systems, networks, and data from digital attacks, unauthorized access, and damage.</p>
+            <button>Course Content</button>
+          </div>
+        </div>
+    
+        <!-- Advanced Courses -->
+        <div class="course-card advanced" onclick="window.open('https://docs.google.com/document/d/1Jk0fdA6YcgMcZBXjySolSrXZcGSYans5/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/advanced-analytics.jpg" alt="Advanced Data Analytics">
+          <div class="course-info">
+            <h2>Data Analytics (Adv)</h2>
+            <p>Master complex analytics, including machine learning models and big data technologies.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D12,000</span>
+                    <span class="original-price">D10,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This module equips students with essential skills in Database Management, Tableau and Phython Programming.</p>
+            <button>Course Content</button>
+          </div>
+        </div>    
+        <div class="course-card advanced" onclick="window.open('https://docs.google.com/document/d/1wwDPL5OObztES1MPxrOsAcbPheXeuGaa/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/data-science-2.jpg" alt="Advanced Data Science">
+          <div class="course-info">
+            <h2>Data Science (Adv)</h2>
+            <p>Become proficient in advanced machine learning algorithms, AI models, and big data frameworks.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D12,000</span>
+                    <span class="original-price">D10,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>The course equips students in advanced analytics and probleam solving.</p>
+            <button>Course Content</button>
+          </div>
+        </div>    
+        <div class="course-card advanced" onclick="window.open('https://docs.google.com/document/d/1rrJk_AlTnGquNJc3jg-T3dSavwZIL8yc/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/digital-marketing-2.webp" alt="Advanced Digital Marketing">
+          <div class="course-info">
+            <h2>Digital Marketing (Adv)</h2>
+            <p>This course delve into HubSpot's CRM integration for customer relationship management and targeted campaign.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D12,000</span>
+                    <span class="original-price">D10,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This courses equips students with skills in social media and email marketing tactic, content creation and paid advertisment.</p>
+            <button>Course Content</button>
+          </div>
+        </div>    
+        <div class="course-card advanced" onclick="window.open('https://docs.google.com/document/d/1z29pQNEs57Nq4RByMRrXX05WI1Hlri6s/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/graphic-design-2.jpg" alt="Advanced Graphic Design">
+          <div class="course-info">
+            <h2>Graphic Design (Adv)</h2>
+            <p>create visually compelling designs for branding, social media, and print. You'll work on professional-grade projects.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D12,000</span>
+                    <span class="original-price">D10,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This module focuses on creating professional-quality visual content using advanced design principles and tools.</p>
+            <button>Course Content</button>
+          </div>
+        </div>    
+        <div class="course-card advanced" onclick="window.open('https://docs.google.com/document/d/1NexVQEViZdznRW8UQ18ibOZHfYcg-rGl/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/cyber-security-2.jpg" alt="Advanced Cyber Security">
+          <div class="course-info">
+            <h2>Cyber Security (Adv)</h2>
+            <p>Explore advanced techniques in encryption, ethical hacking, and cybersecurity frameworks.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D12,000</span>
+                    <span class="original-price">D10,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course equip learners with specialized skills to tackle complex and evolving security challenges.</p>
+            <button>Course Content</button>
+          </div>
+        </div>
+
+        <!-- Master Class -->
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/13aVBCVVS2TbU9D8BiYJT0ucJ2-H0SkUB/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/stata.jpg" alt="Stata Image">
+          <div class="course-info">
+            <h2>Stata</h2>
+            <p>Gain hands-on experience with Stata, learning how to apply its tools to research, business, economics, and social science data analysis.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course is ideal for individuals pursuing careers in data science, economics, public health, or other fields that require data-driven decision-making.</p>
+            <button>Course Content</button>
+          </div>
+        </div>    
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1rXQ_S_hxtN38AdQUpe3jnoMnw2jRaVfN/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/business-development.jpg" alt="Business-development">
+          <div class="course-info">
+            <h2>Business Development</h2>
+            <p>Learn market research, customer relationship management (CRM), and business planning to enhance organizational growth.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course explores strategies to grow and expand businesses by identifying new opportunities, building partnerships, and improving sales pipelines.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1fQLcboDFHeq60Bd9FvVvcbFqUdOd3E4l/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/analysis-with-tableau.jpg" alt="analysis-with-tableau">
+          <div class="course-info">
+            <h2>Analytics With Tableau</h2>
+            <p>learn how to clean, organize, and present data for effective decision-making.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course focuses on using Tableau to analyze and visualize data. Key skills include creating dashboards, generating insights.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1jL-eUiNVX32IMUyTOH_30YNB6L1fLceh/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/fianancial-analysis.jpg" alt="Financial Analysis">
+          <div class="course-info">
+            <h2>Financial Analysis</h2>
+            <p>gain skills in budgeting, valuation, and investment decision-making by interpreting Financial statements and forcasting.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>Financial Analysis teaches techniques to evaluate a company’s financial health.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1A1fboZj7qINvzSKAs5OecX8EEZh3eg6C/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/fintech.jpg" alt="Fintech">
+          <div class="course-info">
+            <h2>Fintech</h2>
+            <p>Learn to navigate innovations transforming traditional finance.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course examines the intersection of finance and technology. It covers digital payments, blockchain, cryptocurrencies.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1M7RT8Vq1gEAiCxidfp2qa60IkYl52jtb/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/monitoring-evaluation.jpg" alt="monitoring-evaluation">
+          <div class="course-info">
+            <h2>Monitoring and Evaluation</h2>
+            <p>Learn to ensure accountability, efficiency, and effectiveness in development initiatives.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course provides tools to assess the performance of programs and projects. It covers setting indicators.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1i4fDX-tdI8yJ9vveCooKbxUUOrtd4w7W/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/personal-branding.jpg" alt="Personal-Branding">
+          <div class="course-info">
+            <h2>Personal Branding</h2>
+            <p>Learn strategies to showcase their skills, values, and achievements through online platforms, networking.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>Personal Branding focuses on building and managing a professional identity.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1JZ4V4YCOSHPvFsMaJfTqyx4ll_-3n7VQ/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/photography.jpg" alt="Photography">
+          <div class="course-info">
+            <h2>Photography</h2>
+            <p>Explore creative techniques for capturing compelling images in various genres, such as portrait, landscape, and documentary photography.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course teaches the fundamentals of photography, including camera operation, composition, lighting, and post-processing.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1DDKh5xes1cQKM9La4n2XvBBr1AK0_pEe/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/procurement.jpeg" alt="Procurement">
+          <div class="course-info">
+            <h2>Procurement Fundatmental</h2>
+            <p>Learn supply chain management, vendor relations, and procurement strategies to ensure efficiency and cost-effectiveness.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course involves the sourcing, negotiation, and acquisition of goods and services.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1ws3eQlwveJJSm5N6CpS7CxVxJznftq0s/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/product-development.jpg" alt="Product-development">
+          <div class="course-info">
+            <h2>Product Development</h2>
+            <p>learn to align product design with customer needs and business goals. Topics include market research, ideation, prototyping, and testing.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course guides students through the process of creating and launching new products.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1_l9GGhlFQf7LDmZUjM1HVxX4Qz-DcO68/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/project-management.jpg" alt="Project-Management">
+          <div class="course-info">
+            <h2>Project Management</h2>
+            <p>Gain knowledge of project management tools and methodologies like Agile and PMP.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course equips students with skills to plan, execute, and oversee projects.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/1SGZ1p-4j21kfBV1NhunfDsnG7GBIpRZ7/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/prompt-engineering.jpg" alt="prompt-engineering">
+          <div class="course-info">
+            <h2>Prompt Engineering</h2>
+            <p>Learn how to structure prompts, troubleshoot issues, and optimize AI-generated content for various applications.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course focuses on designing and refining inputs for AI models like ChatGPT to generate desired outputs.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+        <div class="course-card master-class" onclick="window.open('https://docs.google.com/document/d/13OqhH3edC1yv7z9AuJr1-_1dCWoeUmi2/edit?usp=sharing&ouid=106596319892669799587&rtpof=true&sd=true');">
+          <img src="./assets/images/courses/public-speaking.jpg" alt="Public-Speaking">
+          <div class="course-info">
+            <h2>Public Speaking</h2>
+            <p>Learn techniques for audience engagement, speech organization, and managing nerves. Emphasis is placed on clear communication and impactful storytelling.</p>
+            <p class="para-pricing">
+              Fees: <span class="canceled-price">D3,000</span>
+                    <span class="original-price">D2,000</span>
+            </p>
+            <h5>Course Overview</h5>
+          </div>
+          <div class="course-hover-content">
+            <h3>Course Overview</h3>
+            <p>This course builds confidence and skills in delivering effective presentations.</p>
+            <button>Course Content</button>
+          </div>
+        </div> 
+    </div>
+
+    <!-- WHATAPP-CHAT -->
+    <a
+    href="https://wa.me/+2203229625"
+    target="_blank"
+    class="whatsapp-chat"
+    title="Chat with us on WhatsApp"
+    >
+    <span class="whatsapp-icon"><img src="./assets/images/icons - logos/whatsap.webp" alt="Whatsapp-logo"></span>
+    </a>
+
+    <!-- ------ Footer Section ------ -->
+    <footer class="footer-distributed " id="footer">
+        <div class="container">
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    Our curriculum is designed to be hands-on and industry relevant, ensuring 
+                    that our students not only gain theoretical knowledge but also practical skills that are 
+                    in high demand in today's job market.
+                </p>
+                <div class="media-icons">
+                  <a href="https://www.linkedin.com/company/gomindz-academy/"><img src="./assets/images/icons - logos/linkedin.webp" alt="linkedin-page"></a>
+                  <a href="https://www.instagram.com/gomindzacademy?igsh=MXN2NGZsazF6eHpsdw%3D%3D&utm_source=qr"><img src="./assets/images/icons - logos/instagram.webp" alt="instagram-page"></a>
+                  <a href="https://x.com/gomindzacademy?s=11"><img src="./assets/images/icons - logos/twitter.webp" alt="twitter-page"></a>
+                  <a href="https://www.tiktok.com/@gomindzacademy101?_t=8q9muuf7kve&_r=1"><img src="./assets/images/icons - logos/tik-tok.webp" alt="whatsapp-page"></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="r-icons ri-map-pin-line"></i>
+                    <p><span>Kairaba Avenue, </span>Opposite Qcell</p>
+                </div>
+                <div>
+                    <i class="r-icons ri-phone-line"></i>
+                    <p>+220 5293353 / 3696325</p>
+                </div>
+                <div>
+                    <i class="r-icons ri-mail-line"></i>
+                    <p><a href="#">academy@gomindz.gm</a></p>
+                </div>
+            </div>
+            <div class="footer-left">
+                <h3>Gomindz Academy</h3>
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    |
+                    <a href="index.html#courses">Courses</a>
+                    |
+                    <a href="about.html">About</a>
+                    |
+                    <a href="index.html#testimonials">Testimonials</a>
+                </p>
+                <p class="footer-company-name">Copyright © 2024 
+                    <strong>Gomindz Academy</strong> All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --x-- Main Body --x-- -->
+            
+    <!-- ----- JavaScrip ----- -->
+        <!-- ----- Jquery ----- -->
+        <script src="./assets/js/jquery3.7.1.js"></script>
+
+        <!-- ----- aos animate ----- -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- ----- Swiper Js ----- -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- ----- Owl Carousel ----- -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+
+        <!-- ------ AOS Animate ------ -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 0,
+                duration: 2000,
+                delay: 0,
+                once: false
+            });
+        </script>
+
+        <!-- ----- Custom JS ----- -->
+        <script src="./assets/js/other-pages.js"></script>
+        <script src="./assets/js/script.js"></script>
+</body>
+</html>

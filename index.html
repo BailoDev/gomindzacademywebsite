@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomindz Academy</title>
+    <!-- ----- Links ----- -->
+        <!-- ----- Custom CSS ----- -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- ------ AOS Animate ------- -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- ----- Owl Carousel ----- -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+        <!-- ----- Box-Icons ----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!-- ----- Swiper JS ----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <!-- Email-Js -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "jC0QC4jPnEBLEJEKl",
+                });
+            })();
+        </script>
+</head>
+<body>
+    <!-- HEADER-SECTION -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <img src="./assets/images/company-logo.webp" alt="company-logo" style="width: 2.8rem;">
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">
+                            <i class='bx bx-home  nav-icon'></i>
+                            <span class="nav-name">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <i class='bx bx-user nav-icon'></i>
+                            <span class="nav-name">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html" class="nav-link">
+                            <i class='bx bx-book nav-icon'></i>
+                            <span class="nav-name">Courses</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#faqs" class="nav-link">
+                            <i class='bx bx-news nav-icon'></i>
+                            <span class="nav-name">FAQ's</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="events-gallery.html" class="nav-link">
+                            <i class='bx bx-calendar-event nav-icon'></i>
+                            <span class="nav-name">Events</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+
+            <div class="btns">
+                <a href="intern.html" class="btn-secondary">Hire Interns</a>
+                <a href="#courses" class="btn-primary">Portal</a>
+            </div>
+        </nav>
+    </header>
+        
+    <!-- =================MAIN-BODY=================== -->
+    <!-- HOME-SECTION -->
+    <div class="section-hight home" id="home">
+        <div class="container">
+            <div class="home-content-wrapper">
+                <div class="home-content" data-aos="fade-up">
+                <h1>
+                    Unlock Your Potential <br>
+                    <span class="heading-1">With our Cutting-Edge</span><br>
+                    <span class="heading-2">I.T Courses</span>
+                </h1>
+                <p>
+                    At Gomindz Academy, we set out to reinvent education in the digital era. 
+                    As an Ed-tech community, we stand at the forefront of democratizing and 
+                    empowering skills in the field of technology. In a world driven by data and technology, 
+                    we believe in making technical expertise accessible to everyone.
+                </p>
+                <div class="home-content-btn btns">
+                    <a href="#courses" class="btn-primary">Courses</a>
+                    <a href="#contact" class="btn-secondary">Enroll Now</a>
+                </div>
+                </div>
+                <div class="home-image">
+                    <img src="./assets/images/gomindz-home.webp" alt="home-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COUNTER-SECTION -->
+    <section class="counter-section">
+        <div class="counter-container container">
+            <div class="counter">
+                <span class="counter-number" data-target="6">0</span>
+                <p>Programs</p>
+            </div>
+            <div class="counter">
+                <span class="counter-number" data-target="82">0%</span>
+                <p>Admission Rate</p>
+            </div>
+            <div class="counter">
+                <span class="counter-number" data-target="78">0%</span>
+                <p>Graduation Rate</p>
+            </div>
+            <div class="counter">
+                <span class="counter-number" data-target="88">0%</span>
+                <p>Students Satisfaction</p>
+            </div>
+            <div class="counter">
+                <span class="counter-number" data-target="72">0%</span>
+                <p>Employment Rate</p>
+            </div>
+            <div class="counter">
+                <span class="counter-number" data-target="5">0</span>
+                <p>Partnership</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- OVERVIEW-SECTION -->
+    <section class="overview" id="overview">
+        <div class="container overview-container">
+            <div class="overview-image" >
+                <img src="./assets/images/dot-bg.webp" alt="dotted-img" class="overview-bg">
+                <img src="./assets/images/overview-main.jpg" alt="Students-imgage" class="overview-img-1">
+                <img src="./assets/images/overview-img-3.webp" alt="Students-imgage" class="overview-img-2">
+                <img src="./assets/images/overview-img-2.webp" alt="Students-imgage" class="overview-img-3" data-aos="fade-down-right">
+            </div>
+            <div class="overview-content">
+                <h4 class="subheading">Why Gomindz Acadmey</h4>
+                <h1>Jump Start Your Professional Career</h1>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <img src="./assets/images/overview-icon-1.webp" alt="service-img">
+                        <h6>Industry-driven Curriculum</h6>
+                        <p>
+                            Our commitment to excellence in education and training is reflected in our industry-driven 
+                            curriculum. Our curriculum equips students with the skills necessary in today’s workforce.
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <img src="./assets/images/overview-icon-3.webp" alt="service-img">
+                        <h6>Hands on learning</h6>
+                        <p>
+                            Our approach of teaching ennsures that our students can bridge the gap betweeen throretical 
+                            knowledge and practical application, fostering a deeper understanding and long-lasting proficiency. 
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <img src="./assets/images/overview-icon-2.webp" alt="service-img">
+                        <h6>Expert Instructors</h6>
+                        <p>
+                            At Gomindz Academy we pride ourselves in providing top notch education and training, 
+                            and our team of expert instructors is the backbone of this mission.
+                        </p>
+                    </div>
+                    <div class="overview-card">
+                        <img src="./assets/images/overview-icon-4.webp" alt="service-img">
+                        <h6>Career Support</h6>
+                        <p>
+                            At Gomindz Academy we provide career support to our students through bringing out the potentials in them,
+                            installing a sense of direction towards their career in tech.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES-SECTION -->
+    <section class="courses section-hight" id="courses">
+        <div class="container">
+            <div class="col-lg-6">
+                <h5 class="subheading text-center" style="font-size: 32px;">Courses</h5>
+                <P class="text-center" style="max-width: 600px; font-size: 18px;" data-aos="flip-left">
+                    Our courses are design to equip you with the skill and knowledge to thrive in today's
+                    tech deriven landscape.
+                </P>
+            </div>
+            <div class="courses-content swiper">
+                <div class="courses-content-wrapper">
+                    <div class="course-list swiper-wrapper">
+                        <div class="course-item swiper-slide">
+                            <div class="course-link">
+                                <img src="./assets/images/course-img-1.jpg" alt="course-img" class="course-img">
+                                <h4 class="course-name">Foundation</h4>
+                                <div class="course-detail-star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                                <p>
+                                    We provide hands-learning in digital skills, introducing learners to the concepts 
+                                    and practices required for personal and professional growth in the digital age.
+                                </p>
+                                <div class="course-btn">
+                                    <img src="./assets/images/icons - logos/next.png" alt="arrow-img" class="course-arrow">
+                                    <a href="courses.html" class="btn-primary">Explore Courses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-item swiper-slide">
+                            <div class="course-link">
+                                <img src="./assets/images/course-img-2.jpg" alt="course-img" class="course-img">
+                                <h4 class="course-name intermediate">Intermediate</h4>
+                                <div class="course-detail-star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                                <p>
+                                    This level is for individual with basic I.T skills and want to enhance their competencies 
+                                    in specialized areas in such as Data Analytics, Cyber Security, Digital Marketing..
+                                </p>
+                                <div class="course-btn">
+                                    <img src="./assets/images/icons - logos/next.png" alt="arrow-img" class="course-arrow">
+                                    <a href="courses.html" class="btn-primary">Explore Courses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-item swiper-slide">
+                            <div class="course-link">
+                                <img src="./assets/images/course-img-3.jpg" alt="course-img" class="course-img">
+                                <h4 class="course-name advanced">Advanced</h4>
+                                <div class="course-detail-star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                                <p>
+                                    This level focuses on equipping individuals with deep, technical expertise and industry 
+                                    expertise relevant skills. Designed for professionals aiming for mastery. 
+                                </p>
+                                <div class="course-btn">
+                                    <img src="./assets/images/icons - logos/next.png" alt="arrow-img" class="course-arrow">
+                                    <a href="courses.html" class="btn-primary">Explore Courses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-item swiper-slide">
+                            <div class="course-link">
+                                <img src="./assets/images/course-img-4.jpg" alt="course-img" class="course-img">
+                                <h4 class="course-name capacity-building">Corporate</h4>
+                                <div class="course-detail-star">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                                <p>
+                                    Programs tailored to meet the specific needs of individuals and organizations seeking to 
+                                    upskills their expertise by providing customized solutions in professional areas.
+                                </p>
+                                <div class="course-btn">
+                                    <img src="./assets/images/icons - logos/next.png" alt="arrow-img" class="course-arrow">
+                                    <a href="courses.html" class="btn-primary">Explore Courses</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERS-SECTION -->
+    <section class="section-height" id="partners">
+        <div class="container">
+            <div class="partners-content">
+                <div class="partners-grid-left">
+                    <img src="./assets/images/partners.jpg" alt="Partners-img" class="partners-img">
+                    <!-- <video controls src="./assets/images/videos/dax.mp4" ></video> -->
+                </div>
+                <div class="partners-grid-right">
+                    <div class="partners-text">
+                        <h2>
+                            Trusted Partners
+                        </h2>
+                        <p style="color: rgb(90, 87, 87);">
+                            We believe in fostering long-lasting relationships built on mutual respect
+                            and a shared vision for success.
+                        </p>
+                    </div>
+                    <div class="partners-logos">
+                        <div class="paterners-slider">
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/logo.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/baldez-media.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/cdg.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/kit.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/kg.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/logo.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/baldez-media.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/cdg.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/kit.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/kg.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/logo.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/baldez-media.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/cdg.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/kit.png" alt="partners-logo">
+                            </div>
+                            <div class="partners-logo">
+                                <img src="./assets/images/icons - logos/kg.png" alt="partners-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL-SECTION -->
+    <section class="section-height" id="testimonials">
+        <div class="container testimonial-container">
+            <div class="testimonial-content">
+                <h4 class="subheading text">Testimonials</h4>
+                <h1 >What Our Students Say</h1>
+                <div class="slider">
+                    <div class="slide active">
+                        <p style="font-size: 17px;">
+                            <span><i class='bx bxs-quote-left'></i></span>
+                            Gomindz Academy actually helped me in narrowing down my career path. 
+                            I could remember prior before attending Gomindz Academy, I literally couldn’t 
+                            decide on what to focus on if I finish my undergrade study, but in the 
+                            long run as time goes by I began to develop and understand that I have to 
+                            narrow down to become a Data Analyst for economics and business or a researcher.
+                        </p>
+                        <div class="slide-info">
+                            <h4>Jonas Mendy</h4>
+                            <h5>I.T Support <span>--Nick TC Scan</span></h5>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <p style="font-size: 17px;">
+                            <span><i class='bx bxs-quote-left'></i></span>
+                            Gomindz Academy has been a guiding light for me ever since I completed my 3 months program with them. 
+                            The Academy has young expert instructors, hands-on learning and a vibrant community. I have gained invaluable skills 
+                            that helped me through my final research project at the university and today I am implementing what I’ve earnt on my 
+                            career as a sales and marketing assistant. Am highly recommending Gomindz Academy to anyone looking to dive into the 
+                            world of digital innovation.
+                        </p>
+                        <div class="slide-info">
+                            <h4>Halimatou Samateh</h4>
+                            <h5>Communication <span>--Djeliba Leisure Group</span></h5>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <p style="font-size: 17px;">
+                            <span><i class='bx bxs-quote-left'></i></span>
+                            During my 12 weeks at Gomindz Academy, I gained knowledge and skills that made a significant impact. 
+                            It helped me understand that there is more to know beyond just Microsoft office applications (Word, Excel 
+                            and PowerPoint). When I mentioned my analytical skills during my last job interview, the panel was impressed 
+                            and it made me stand out from all other candidates. Thank you Gomindz Academy for initiating such a unique 
+                            field of study.
+                        </p>
+                        <div class="slide-info">
+                            <h4>Fatou Secka</h4>
+                            <h5>Student <span>--UTG</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-indicator">
+                    <img src="./assets/images/Jonas.webp" class="active" alt="Student-Image" data-id="0">
+                    <img src="./assets/images/Halima.webp" alt="Student-Image" data-id="1">
+                    <img src="./assets/images/fatou secka.webp" alt="Student-Image" data-id="2">
+                </div>
+            </div>
+            <div class="testimonial-image">   
+                <!-- <img src="./assets/images/testimonial-img-1.webp" alt="Testimonial-img" > -->
+                <video controls  src="./assets/images/videos/data_analytics.mp4" ></video>
+                <video controls  src="./assets/images/videos/digital_marketing.mp4" ></video>
+                <div class="testimonial-image-content">
+                    <ul data-aos="fade-up">
+                        <li>Efficiency</li> 
+                        <li>Innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT-SECTION -->
+    <section class="section-height" id="contact">
+        <div class="container">
+            <h5 class="clip-path subheading text-center">contact us</h5>
+            <h2 class="clip-path text-center" data-aos="flip-left">
+                Get In Touch
+            </h2>
+            <div class="contact">
+                <form action="" class="contact-form">
+                    <h1>Reach out to us</h1>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="number" id="phone_number" name="number" placeholder="Phone Number" required>
+                    <input type="Email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea rows="10" id="message" name="message" placeholder="Message" required></textarea>
+                    <div class="btns">
+                        <a href="#" type="submit" onclick="sendMail()" class="btn-primary">Submit</a>
+                    </div>
+                </form>
+                <div class="contact-details">
+                    <p class="text">
+                        Need to get in touch with us? Either fill out the form with 
+                        your inquiry or link us through email or phone you'd like 
+                        to contact below, we'd love to hear from you.
+                    </p>
+                    <p class="details">
+                        <div class="detail">
+                            <div class="detail-icon">
+                                <i class='bx bx-phone-call'></i>
+                            </div>
+                            <div class="detail-content">
+                                <h3>Phone</h3>
+                                <p>+220 3696325 / 3229625</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <div class="detail-content">
+                                <h3>Email</h3>
+                                <p>academy@gomindz.gm</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">
+                                <i class='bx bx-current-location'></i>
+                            </div>
+                            <div class="detail-content">
+                                <h3>Address</h3>
+                                <p>Kairaba Avenue, Opposite Qcell</p>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- WHATAPP-CHAT -->
+    <a
+    href="https://wa.me/+2203229625"
+    target="_blank"
+    class="whatsapp-chat"
+    title="Chat with us on WhatsApp"
+    >
+    <span class="whatsapp-icon"><img src="./assets/images/icons - logos/whatsap.webp" alt="Whatsapp-logo"></span>
+    </a>
+    
+    <!-- FOOTER-SECTION -->
+    <footer class="footer-distributed " id="footer">
+        <div class="container">
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    Our curriculum is designed to be hands-on and industry relevant, ensuring 
+                    that our students not only gain theoretical knowledge but also practical skills that are 
+                    in high demand in today's job market.
+                </p>
+                <div class="media-icons">
+                    <a href="https://www.linkedin.com/company/gomindz-academy/"><img src="./assets/images/icons - logos/linkedin.webp" alt="linkedin-page"></a>
+                    <a href="https://www.instagram.com/gomindzacademy?igsh=MXN2NGZsazF6eHpsdw%3D%3D&utm_source=qr"><img src="./assets/images/icons - logos/instagram.webp" alt="instagram-page"></a>
+                    <a href="https://x.com/gomindzacademy?s=11"><img src="./assets/images/icons - logos/twitter.webp" alt="twitter-page"></a>
+                    <a href="https://www.tiktok.com/@gomindzacademy101?_t=8q9muuf7kve&_r=1"><img src="./assets/images/icons - logos/tik-tok.webp" alt="whatsapp-page"></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="r-icons ri-map-pin-line"></i>
+                    <p><span>Kairaba Avenue, </span>Opposite Qcell</p>
+                </div>
+                <div>
+                    <i class="r-icons ri-phone-line"></i>
+                    <p>+220 5293353 / 3696325</p>
+                </div>
+                <div>
+                    <i class="r-icons ri-mail-line"></i>
+                    <p><a href="#">academy@gomindz.gm</a></p>
+                </div>
+            </div>
+            <div class="footer-left">
+                <h3>Gomindz Academy</h3>
+                <p class="footer-links">
+                    <a href="#home">Home</a>
+                    |
+                    <a href="#courses">Courses</a>
+                    |
+                    <a href="about.html">About</a>
+                    |
+                    <a href="#testimonials">Testimonials</a>
+                </p>
+                <p class="footer-company-name">Copyright © 2024 
+                    <strong>Gomindz Academy</strong> All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ===================MAIN-BODY==================== -->
+            
+    <!-- JAVASCRIPT -->
+        <!-- JQUERY -->
+        <script src="./assets/js/jquery3.7.1.js"></script>
+
+        <!-- AOS-ANIMATE -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 0,
+                duration: 2000,
+                delay: 0,
+                once: false
+            });
+        </script>
+
+        <!-- SWIPER-JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- OWL-CAROUSEL -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+
+        <!-- CUSTOM-JS -->
+        <script src="./assets/js/script.js"></script>
+</body>
+</html>
