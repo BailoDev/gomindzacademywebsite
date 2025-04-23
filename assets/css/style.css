@@ -800,7 +800,7 @@ a{
 .paterners-slider{
     animation: scroll-logo 40s linear infinite;
     display: flex;
-    width: calc(68rem * 3);
+    width: calc(86rem * 3);
     cursor: pointer;
 }
 .partners-logo{

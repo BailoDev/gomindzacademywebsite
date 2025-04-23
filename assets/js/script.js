@@ -11,6 +11,8 @@ function sendMail(){
 }
 
 
+
+
 // FAQ'S-SECTION
 const faqs = document.querySelectorAll(".faq-item");
 
